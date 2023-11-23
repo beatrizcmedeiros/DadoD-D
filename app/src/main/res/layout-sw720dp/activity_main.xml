@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textEscolhaDado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/escolha_o_seu_dado"
+        android:textSize="75sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="422dp"
+        android:layout_height="172dp"
+        android:layout_marginTop="1000dp"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        android:text="@string/valor_sorteado"
+        android:textSize="70sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="563dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="228dp"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/lan_ar_dado"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="134dp"
+        android:layout_height="587dp"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:selectionRequired="true"
+        app:singleSelection="true"
+        tools:layout_editor_absoluteY="539dp"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/d4"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:minHeight="48dp"
+            android:text="@string/d4"
+            android:textSize="50sp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/d6"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/d6"
+            android:textSize="50sp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/d8"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/d8"
+            android:textSize="50sp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/d10"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/d10"
+            android:textSize="50sp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/d12"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/d12"
+            android:textSize="50sp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/d16"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/d16"
+            android:textSize="50sp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/d20"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/d20"
+            android:textSize="50sp" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="600dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/d4_1"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="@+id/chipGroup"
+        app:layout_constraintTop_toBottomOf="@+id/textEscolhaDado"
+        app:layout_constraintVertical_bias="0.38" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
